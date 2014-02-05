@@ -2,9 +2,9 @@
 The MIRROR Spaces Framework (MSF) is a middleware created to enable interoperability between the applications developed in the MIRROR project.
 
 ## MIRROR Spaces Concept
-It realizes the MIRROR Spaces concept, which specifies a way how users can share information in a controlled and secure environment.
+The MSF implements the MIRROR Spaces concept, which specifies a way how users can share information in a controlled and secure environment. Spaces can be seen as virtual room where users can exchange data in real-time, store and restore data, and communicate with each other. The spaces are provided by the MSF and can be accessed by applications on behalf of the users. As privacy is highly important within MIRROR, an access model with user authentication and authorization is core element of both the spaces concept and its implementation.
 
-Spaces can be seen as virtual room where users can exchange data in real-time, store and restore data, and communicate with each other. The spaces are provided by the MSF and can be accessed by applications on behalf of the users. As privacy is highly important within MIRROR, an access model with user authentication and authorization is core element of both the spaces concept and its implementation.
+![Collaboration with MIRROR Spaces][1]
 
 The specific requirements of individual, collaborative, and organizational environments are supported by different types of spaces:
 
@@ -28,3 +28,6 @@ The MSF is composed by the following components:
 ----
 
 © The MIRROR Project - Co-Funded by EC IST FP7
+
+
+  [1]: https://raw.github.com/MirrorIP/msf/master/images/spaces-concept.png

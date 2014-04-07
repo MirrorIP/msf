@@ -61,9 +61,14 @@ This is taken up by the MIRROR File Service. The service provides a repository f
 Tools provide user interfaces to handle the features provided by the MIRROR Spaces Framework.
 
 #### Space Manager
-The MIRROR Space Manager is a web application allowing users to manage their spaces separately from the MIRROR applications. As any application connected to the MSF acts on behalf of a user and has access to all spaces the user is member of, this tool enables a shifting the space management from the application to the user level
+The MIRROR Space Manager is a web application allowing users to manage their spaces separately from the MIRROR applications. As any application connected to the MSF acts on behalf of a user and has access to all spaces the user is member of, this tool enables a shifting of the space management from the application to the user level.
 
 [↪ Details][6]
+
+#### Account Management Tool
+The Account Management Tool allows the self-creation of user accounts and the management of the user profile. Additionally, users can restore their passwords using this tool.
+
+[↪ Details][7]
 
 ### SDKs
 One of the reasons for choosing XMPP as base technology for the framework was the availability of client libraries for nearly any development platform. The libraries serve two major purposes: First they handle the connection to the XMPP network. Then they abstract from the protocol layer for the both the basic XMPP protocol and for supported protocol extensions.
@@ -72,15 +77,15 @@ By working directly with the protocol layer by exchanging XML stanzas, all featu
 
 To decrease the development effort, we introduced “Spaces Software Development Kits” (Spaces SDKs) for several platforms. The SDKs are used as software libraries (as illustrated below) and provide a high-level API for the MSF protocol extensions. Additionally, they add an abstraction layer to the already existing protocol support by the underlying XMPP libraries. An example for this additional layer is the handling of data objects: We provide a data handler which is registered to one or more spaces in order to retrieve data objects. This handler abstracts the handling of publish-subscribe node, acts as observer for incoming messages, generates (high-level) data objects based on the items received, etc.
 
-![Spaces SDK Concept][7]
+![Spaces SDK Concept][8]
 
-Although different platform enforce different coding schemes, we provide a common API for all SDK implementations ([↪ Details][8]). On the one hand, the API specifies the basic design of the SDK. On the other hand, the version of the API reflects the list of MSF features supported by the SDK.  The SDK implementations share the major and minor version of the API. With this approach, it is easy to compare the different implementations in regard to their feature support.
+Although different platform enforce different coding schemes, we provide a common API for all SDK implementations ([↪ Details][9]). On the one hand, the API specifies the basic design of the SDK. On the other hand, the version of the API reflects the list of MSF features supported by the SDK.  The SDK implementations share the major and minor version of the API. With this approach, it is easy to compare the different implementations in regard to their feature support.
 
 We currently maintain three implementations of the Spaces SDK:
 
-*	An implementation for **Java-based applications**, including both desktop and web application platforms. ([↪ Details][9])
-*	An implementation for mobile devices running on **Android** with version 2.2 or higher. ([↪ Details][10])
-*	An implementation written in **JavaScript** designed for single-page web-applications running the web browser. ([↪ Details][11])
+*	An implementation for **Java-based applications**, including both desktop and web application platforms. ([↪ Details][10])
+*	An implementation for mobile devices running on **Android** with version 2.2 or higher. ([↪ Details][11])
+*	An implementation written in **JavaScript** designed for single-page web-applications running the web browser. ([↪ Details][12])
 
 ----
 
@@ -93,8 +98,9 @@ We currently maintain three implementations of the Spaces SDK:
   [4]: https://github.com/MirrorIP/msf-spaces-service
   [5]: https://github.com/MirrorIP/msf-persistence-service
   [6]: https://github.com/MirrorIP/msf-space-manager
-  [7]: https://raw.github.com/MirrorIP/msf/master/images/sdk-schema.png
-  [8]: https://github.com/MirrorIP/msf-spaces-sdk-api
-  [9]: https://github.com/MirrorIP/msf-spaces-sdk-java
-  [10]: https://github.com/MirrorIP/msf-spaces-sdk-android
-  [11]: https://github.com/MirrorIP/msf-spaces-sdk-javascript
+  [7]: https://github.com/MirrorIP/msf-account-manager
+  [8]: https://raw.github.com/MirrorIP/msf/master/images/sdk-schema.png
+  [9]: https://github.com/MirrorIP/msf-spaces-sdk-api
+  [10]: https://github.com/MirrorIP/msf-spaces-sdk-java
+  [11]: https://github.com/MirrorIP/msf-spaces-sdk-android
+  [12]: https://github.com/MirrorIP/msf-spaces-sdk-javascript

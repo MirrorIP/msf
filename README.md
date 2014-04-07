@@ -77,9 +77,10 @@ To decrease the development effort, we introduced “Spaces Software Development
 Although different platform enforce different coding schemes, we provide a common API for all SDK implementations ([↪ Details][8]). On the one hand, the API specifies the basic design of the SDK. On the other hand, the version of the API reflects the list of MSF features supported by the SDK.  The SDK implementations share the major and minor version of the API. With this approach, it is easy to compare the different implementations in regard to their feature support.
 
 We currently maintain three implementations of the Spaces SDK:
-•	An implementation for **Java-based applications**, including both desktop and web application platforms. ([↪ Details][9])
-•	An implementation for mobile devices running on **Android** with version 2.2 or higher. ([↪ Details][10])
-•	An implementation written in **JavaScript** designed for single-page web-applications running the web browser. ([↪ Details][11])
+
+*	An implementation for **Java-based applications**, including both desktop and web application platforms. ([↪ Details][9])
+*	An implementation for mobile devices running on **Android** with version 2.2 or higher. ([↪ Details][10])
+*	An implementation written in **JavaScript** designed for single-page web-applications running the web browser. ([↪ Details][11])
 
 ----
 

@@ -33,6 +33,8 @@ The MSF is composed by the following components:
 ### Server
 Central component of the MIRROR Spaces Framework is an XMPP server. The core services (see below) are implemented as plugins for the [Openfire XMPP server][3]. It is an Java-based server released under the Apache License 2.0.
 
+[↪ Details](https://github.com/MirrorIP/msf/wiki/Server-Overview)
+
 ### Services
 Services extend the features provided by the XMPP server.
 
